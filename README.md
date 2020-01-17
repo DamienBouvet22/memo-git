@@ -10,9 +10,19 @@
 git checkout (id du commit)
 
 ### revenir à la version principale
-git pull origin master
+ git switch -
 
+## Editeur de texte de Git
 
+pour inserer du texte --> i (insert)
+
+pour sortir de l'insert --> Esc
+
+pour sortir de l'editeur et revenir aux commandes Git --> :Q
+
+pour sortir de l'editeur en sauvegardant les modifications apportées  --> :X
+
+Bravo tu es sorti du labyrinthe !!!
 
 
 
