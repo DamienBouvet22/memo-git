@@ -1,11 +1,11 @@
-# memo-git
-## livrable module git
+# MEMO GIT 
 
-### Guide Git
+
+## Guide Git
 [Comprendre Git](https://www.grafikart.fr/formations/git)
-### Markdowns
+## Markdowns
 [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-
+## Commandes de base
 ### retourner à une version précédente
 git checkout (id du commit)
 
@@ -24,7 +24,122 @@ pour sortir de l'editeur en sauvegardant les modifications apportées  --> :X
 
 Bravo tu es sorti du labyrinthe !!!
 
+## Git Flow
 
+[Intro à Git Flow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)
+
+
+# Memo Muzza
+
+- git log = voir tous les commits
+
+
+### Envoyer un fichier 
+
+- git add = selectionner un fichier
+
+- git commit -m " le commentaire à mettre " = commenter sa modif obligatoire
+
+- git push = envoyer mon fichier
+
+​
+### Recuperer un fichier
+
+- git pull + le nom du fichier = recuperer un fichier sur github
+
+​
+### Faire un tag sur un commit juste après le commit 
+
+- git tag -a + le nom du tag ex : v1.0 + -m " ma version v1.0" = creer un tag pour un commit
+
+- git show v1.0 = montre ce commit
+
+​
+### Faire un tag sur un commit précis
+
+- git log = voir les commits et choisir le numero du commit à tager
+
+- git tag +le nom du tag +le num du commit
+
+​
+### Envoyer ses tags sur GitHub
+
+- git push origin v1.0 = envoie que ce commit
+
+- git push origin --tags = envoie tous les tags
+
+​
+### Revenir sur une version antérieur et à la version actuel
+
+- git checkout + numero commit/nom du tag = on revient temporairement à la version qu'on à choisit
+
+- git switch master = revenir à la version actuel
+
+​
+### Se balader dans notre répertoire
+
+-  cd = revient au repertoire ex : au bureau
+
+-  cd - = permet de revenir au répertoire précedent
+
+-  cd .. = permet de remonter au répertoire parent (ne pas oublier l'espace contrairement à windows)
+
+-  cd / = permet de remonter à la racine de l'ensemble du système de fichiers
+
+-  cd /usr/bin/ = se place dans le répertoire /usr/bin/
+
+​
+### Supprimer un ou plusieur fichier sois même et mettre à jour son repositories
+
+- supprimer le ou les ficchier
+
+- faire git add --all = selectionner les fichiers supprimer
+
+- faire git commit -m " j'ai supprimer des fichiers"
+
+- faire git push = met à jours github
+
+​
+### Supprimer un dossier et ce qu'il y a dedans
+
+- git rm -r +nom du  dossier = selectionner undossier + les fichiers à l'intérieur
+
+- git commit -m " "
+
+- git push = dossier supr
+
+​
+### Relier son dépot local et github
+
+- retrouver le dossier en local et faire git init
+
+- git add --all
+
+- git  commit -m ""
+
+- git remote add origin + url = faire le lien
+
+- git push  -u origin master = envoyer les fichiers
+
+### Utiliser VCS avec webstorm
+
+- ouvrir le bon project à modifier dans file new project
+
+- changer le fichier dans github
+
+- changer notre fichier en manuel
+
+- faire un vcs + git + commit files et cocher le commit
+
+- ensuite faire git + push 
+
+- faire merge jusqu'à voir les 3 tableaux
+
+- choisir dans le tableau du milieux ce qu'on veut pour le fichier final 
+
+- faire apply
+
+- finir avec git + push
 
 
 # Memo Matthias
